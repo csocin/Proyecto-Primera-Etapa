@@ -22,7 +22,7 @@ body{
   }
   
   .contacto{
-      transition: background-color 1500ms;
+      transition: background-color 1000ms;
   }
 
   a:hover{
