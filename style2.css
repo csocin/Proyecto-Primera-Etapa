@@ -1,3 +1,5 @@
+/*Desktop 1536*/
+
 body{
     margin: 0;
     padding: 0;
@@ -20,7 +22,33 @@ body{
     font-size: 33px;
     color: #06046A;
   }
+
+  /*menu hamburguesa*/
+
+  .imgHamburger{
+    width: 30px;
+    height: 30px;
+  }
+
+  .hamburguesa{
+    display: none;
+
+  }
+
+  input{
+    display: none;
+  }
+
+  .submenu_hamburger{
+    display: none;
+  }
+
+  li{
+    list-style: none;
+  }
+/**/
   
+
   .contacto{
       transition: background-color 1000ms;
   }
@@ -301,7 +329,7 @@ body{
     border-radius: 5px;
   }
   
-  /*Media Query*/
+  /*Desktop 1388*/
   
   @media (max-width: 1388px){
   
@@ -456,6 +484,7 @@ body{
       height: 40px;
       display: flex;
       margin-top: -16px;
+      font-size: 16px;
     }
   
     .queryUno{
@@ -469,6 +498,8 @@ body{
     }
   }
   
+  /*Tablet*/
+
   @media (max-width: 768px){
   
     header{
@@ -489,6 +520,7 @@ body{
       width: 114px;
       height: 119px;
       border-radius: 2px;   
+      border: 1px solid #06046A ;
     }
     
     .navButtons{
@@ -568,7 +600,7 @@ body{
     
     .cardAlquiler{
       width: 137px;
-      height: 183px;
+      height: 200px;
       border: solid 2px #4160a5;
       border-radius: 2px;
       font-size: 9px;
@@ -576,7 +608,7 @@ body{
     
     .cardVenta{
       width: 137px;
-      height: 183px;
+      height: 200px;
       border: solid 2px #4160a5;
       border-radius: 2px;
       font-size: 9px;
@@ -584,7 +616,7 @@ body{
     
     #cardCentral{
       width: 288px;
-      height: 183px;
+      height: 200px;
     }
     
     .botonVerMas{
@@ -600,6 +632,7 @@ body{
       width: 100vw;
       height: 160px;
       font-size: 9px;
+
     }
     
     .navFooter{
@@ -613,7 +646,7 @@ body{
     }
     
     .iframeMap{
-      border: 2px solid #06046A;
+      border: 1px solid #06046A;
       width: 114px;
       height: 119px;
       border-radius: 2px;
@@ -639,6 +672,7 @@ body{
       width: 100%;
       height: 20px;
       margin-top: -10px;
+      font-size: 9px;
     }
   
     .queryUno{
@@ -653,7 +687,191 @@ body{
     
   }
   
-  @media (max-width: 330px){
+  /*quiebre para ir mejorando, menu hamburguesa*/
 
+  @media (max-width: 570px){
+    
+    .navButtons{
+      flex-wrap: wrap;
+    }
+
+    .fondoLago{
+      width: 100vw;
+      height: 200px;
+      padding: 10px 50px 27px 50px;
+    }
+
+    .slogan{
+      font-size: 22px;
+    }
+
+    .flexFooter{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(2,1fr);
+    }
+    
+    .navFooter{
+      grid-row: 1/2;
+      grid-column: 1/2;
+    }
+    
+    .matriculasRedes{
+      grid-column: 2/3;
+    }
+
+    .datosFooter{
+      grid-column: 3/4;
+    }
+
+    .iframeMap{
+      display: none;
+    }
+
+  }
+
+
+  /*Mobile*/
+
+  @media (max-width: 415px) {
+
+    
+
+    .logo{
+      width: 102px;
+      height: 111px;
+    }
+
+    .fondoLago{
+      display: grid;
+      grid-template-rows: repeat(2,1fr); 
+      grid-template-columns: repeat(3,1fr);
+      row-gap: 15px;
+      width: 100%;
+    }
+
+    .slogan{
+      display: none;
+    }
+
+    .navButtons{
+      display: none;
+    }
+
+    .hamburguesa {
+      display: block;
+      grid-row: 1/2;
+      grid-column: 2/3;
+      justify-self: center;
+    }
+
+    .logoSlogan{
+      grid-row: 2/3;
+      grid-column: 2/3;
+    }
+
+    #hamb:checked + .submenu_hamburger{
+      display: block;
+      position: absolute;
+      
+    }
+
+    .flexFooter{
+      display: grid;
+      grid-template-rows: repeat(2,1fr); 
+      grid-template-columns: repeat(2,1fr);
+      gap: 10px;
+      row-gap: 5px;
+      font-size: 8px;
+      height: 300px;
+    }
+    
+    .navFooter{
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+
+    .matriculasRedes{
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+
+    .datosFooter{
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+
+    .buscador{
+      
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: repeat(2,1fr);
+      height: 50px;
+      gap: 8px;
+      row-gap: 10px;
+    }
+
+    .tipoInmueble{
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+
+    .operacion{
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+
+    .ubicacion{
+      grid-column: 3/4;
+      grid-row: 1/2;
+    }
+    
+    .ambientes{
+      grid-column: 1/2;
+      grid-row: 2/2;
+    }
+
+    .botonBuscar{
+      grid-column: 2/3;
+      grid-row: 2/2;
+    }
+  }
+
+  @media (max-width: 325px) {
+  
+    .buscador{
+      
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(3,1fr);
+      height: 70px;
+      gap: 2px;
+      row-gap: 5px;
+    }
+
+    .tipoInmueble{
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+
+    .operacion{
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+
+    .ubicacion{
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+    
+    .ambientes{
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+
+    .botonBuscar{
+      grid-column: 1/2;
+      grid-row: 3/4;
+    }
 
   }

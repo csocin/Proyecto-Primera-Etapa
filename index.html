@@ -17,6 +17,20 @@
     <header>
         <div class="fondoLago">
 
+            <div class="hamburguesa">
+                <label for="hamb"><img src="./hamburger.png" class="imgHamburger" alt="hamburguesa"></label>
+            </div>
+
+            <input type="checkbox" name="hamb" id="hamb">
+            <ul class="submenu_hamburger">
+                <li><a href="">Administracion de Edificios</a></li>
+                <li><a href="./ventas.html">Ventas</a></li>
+                <li><a href="./alquileres.html">Alquileres</a></li>
+                <li><a href="">Tasaciones</a></li>
+                <li><a href="./form.html" class="contacto">Contacto</a></li>
+            </ul>
+
+
             <nav class="navButtons">
                 <a href="">Administracion de Edificios</a>
                 <a href="./ventas.html">Ventas</a>
@@ -27,17 +41,18 @@
 
             <div class="logoSlogan">
                 <a href="./index.html" class="logoGrid"><img src="./Socin - Copy - Copy.jpg"
-                        alt="Logo Debora Socin Servicios Inmobiliarios" class="logo" ></a>
+                        alt="Logo Debora Socin Servicios Inmobiliarios" class="logo"></a>
                 <div class="slogan">
                     <p>"Asesoramiento y compromiso inmobiliario"</p>
                 </div>
             </div>
+
         </div>
     </header>
 
     <main>
         <div class="buscador">
-            <select name="Tipo de inmueble" id="">
+            <select name="Tipo de inmueble" class="tipoInmueble" id="">
                 <option disabled selected>Tipo de inmueble</option>
                 <option value="Departamento">Departamento</option>
                 <option value="Casa">Casa</option>
@@ -47,12 +62,12 @@
                 <option value="Cabaña">Cabaña</option>
                 <option value="Terreno">Terreno</option>
             </select>
-            <select name="Operacion" id="">
+            <select name="Operacion" class="operacion" id="">
                 <option disabled selected>Operacion</option>
                 <option value="Venta">Venta</option>
                 <option value="Alquiler">Alquiler</option>
             </select>
-            <select name="Ubicacion" id="">
+            <select name="Ubicacion" class="ubicacion" id="">
                 <option disabled selected>Ubicacion</option>
                 <option value="Villa Carlos Paz">Villa Carlos Paz</option>
                 <option value="Bialet Massé">Bialet Massé</option>
@@ -62,7 +77,7 @@
                 <option value="Cuesta Blanca">Cuesta Blanca</option>
                 <option value="Cosquín">Cosquín</option>
             </select>
-            <select name="Ambientes" id="">
+            <select name="Ambientes" class="ambientes" id="">
                 <option disabled selected>Ambientes</option>
                 <option value="Monoambiente">Monoambiente</option>
                 <option value="2 Ambientes">2 Ambientes</option>
@@ -74,17 +89,19 @@
         </div>
 
         <section>
-            <div><h1>ALQUILERES DESTACADOS</h1></div>
+            <div>
+                <h1>ALQUILERES DESTACADOS</h1>
+            </div>
             <article>
                 <div class="cardAlquiler">
-                    <img src="./dpto4.png" alt="dpto4" class="queryUno">
-                    <p>Alquiler temporario - Santa Rita</p>
+                    <img src="./dpto4.png" alt="dpto3" class="queryUno">
+                    <p>Alquiler temprario - Santa Rita</p>
                     <p>Descripcion de la Propiedad</p>
                     <button class="botonVerMas"><a href="" id="botonVerMas">Ver más</a></button>
                 </div>
                 <div class="cardAlquiler">
-                    <img src="./dpto2.png" alt="dpto2" class="queryUno">
-                    <p>Alquiler - Departamento Centrico</p>
+                    <img src="./dpto2.png" alt="dpto1" class="queryUno">
+                    <p>Alquiler - Departamento centrico</p>
                     <p>Descripcion de la Propiedad</p>
                     <button class="botonVerMas"><a href="" id="botonVerMas">Ver más</a></button>
                 </div>
@@ -154,7 +171,8 @@
             <div class="navFooter">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.624974533301!2d-64.5053780366299!3d-31.424457145586082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d66387fc5049f%3A0xa22f39220c188a1c!2sLisandro%20de%20la%20Torre%20379%2C%20Villa%20Carlos%20Paz%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1635189427559!5m2!1ses-419!2sar"
-                    width="600" height="450" style="border:2" allowfullscreen="" class="iframeMap" loading="lazy"></iframe>
+                    width="600" height="450" style="border:2" allowfullscreen="" class="iframeMap"
+                    loading="lazy"></iframe>
             </div>
         </div>
 
