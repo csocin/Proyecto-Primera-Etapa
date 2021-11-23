@@ -500,7 +500,7 @@ body{
   
   /*Tablet*/
 
-  @media (max-width: 768px){
+  @media (max-width: 855px){
   
     header{
       margin-bottom: 22px;
